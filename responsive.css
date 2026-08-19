@@ -1,0 +1,54 @@
+/* Responsive tweaks - mobile & tablet */
+
+/* Tablet: <= 900px */
+@media (max-width: 900px) {
+  .navbar { padding: 16px 5%; }
+  .hero { padding: 60px 5% 40px; }
+  .cards { grid-template-columns: repeat(2, 1fr); gap: 18px; padding: 30px 5%; }
+  .quote-section blockquote { font-size: 1.35rem; }
+  .form-section { padding: 20px 5% 80px; }
+}
+
+/* Mobile: <= 600px */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 6%;
+  }
+  .nav-links { width: 100%; display: flex; justify-content: space-between; }
+  .nav-links a { margin-left: 0; font-size: 0.85rem; }
+
+  .hero { padding: 40px 6% 30px; }
+  .hero h1 { font-size: 2rem; line-height: 1.2; }
+  .subtitle { font-size: 1rem; padding: 0 4px; }
+  .badge { font-size: 0.75rem; padding: 5px 12px; }
+
+  .cta-btn { width: 100%; text-align: center; padding: 14px 20px; font-size: 0.95rem; }
+
+  .cards { grid-template-columns: 1fr; gap: 16px; padding: 24px 6%; }
+  .card { padding: 22px 18px; }
+
+  .quote-section { padding: 40px 6%; }
+  .quote-section blockquote { font-size: 1.15rem; }
+
+  .final-cta { padding: 40px 6% 70px; }
+  .final-cta h2 { font-size: 1.4rem; }
+
+  .magic-ball { width: 100px; height: 100px; font-size: 2.6rem; }
+
+  .glass-form { padding: 22px 18px; }
+  .field input, .field textarea { font-size: 0.95rem; padding: 10px 12px; }
+
+  .flying-dog { font-size: 1.4rem !important; }
+}
+
+/* Small mobile: <= 380px */
+@media (max-width: 380px) {
+  .hero h1 { font-size: 1.7rem; }
+  .logo { font-size: 1.1rem; }
+}
+
+/* Prevent horizontal scroll from animations/emoji layer on small screens */
+html, body { max-width: 100%; overflow-x: hidden; }
