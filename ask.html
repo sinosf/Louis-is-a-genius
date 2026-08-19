@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demande à Louis 🔮</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-blobs"></div>
+<nav class="navbar">
+  <div class="logo">LOUIS<span>.exe</span></div>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="ask.html" class="active">Demande à Louis 🔮</a>
+  </div>
+</nav>
+
+<main class="ask-page">
+  <header class="hero small">
+    <p class="badge">🔮 boule magique activée</p>
+    <h1>Demande à <span class="gradient-text">Louis</span></h1>
+    <p class="subtitle">Balance tes infos et ta question. Louis médite dessus et t'envoie la réponse directo par message. Fiable à 100% (ou presque 👀).</p>
+  </header>
+
+  <section class="form-section">
+    <div class="magic-ball" id="magicBall">
+      <div class="ball-inner">🔮</div>
+    </div>
+
+    <form id="askForm" class="glass-form">
+      <div class="field">
+        <label for="name">Ton prénom</label>
+        <input type="text" id="name" name="name" placeholder="ex: Alex" required>
+      </div>
+      <div class="field">
+        <label for="contact">Email ou numéro pour la réponse</label>
+        <input type="text" id="contact" name="contact" placeholder="ex: alex@mail.com ou +33 6 12 34 56 78" required>
+      </div>
+      <div class="field">
+        <label for="question">Ta question pour Louis</label>
+        <textarea id="question" name="question" rows="4" placeholder="Dis tout à Louis, il juge pas (ou juste un peu)..." required></textarea>
+      </div>
+      <button type="submit" class="cta-btn">Envoyer à la boule magique ✨</button>
+    </form>
+
+    <div id="successMsg" class="success-msg hidden">
+      <p>🔮 Message reçu ! Louis consulte les astres et te répond très vite par le contact que t'as donné.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>made with 💜 &amp; big brain energy — Louis Corp ©</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
